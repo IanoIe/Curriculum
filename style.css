@@ -35,7 +35,6 @@ header {
 .menu ul {
     margin-top: 0;
     list-style: none;
-    padding: 0;
     overflow: hidden;
     padding: 0 1000px 0 0;
     
@@ -57,18 +56,104 @@ li {
     margin-left: 0;
 }
 
+
 .div-principal {
-    margin: 0 25px 0 50%;
-    width: 50%;
-    height: 50%;
-    margin-right: 200px;
-    border-radius: 1px solid black;
-
+    top: 2rem;
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.content-experience, .content-formation, .content-competences {
-    border-top: 1px solid #aaa;
+.pricnipale h1 {
+    font-size: 16px;
+    color: rgb(131, 131, 215);
+    font-weight: bold;
 }
+
+.pricnipale h2 {
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.pricnipale p{
+    font-size: 14px;
+}
+
+.div-profil {
+    margin-top: 13.5rem;
+    margin-left: 15px;
+    width: 30%;
+    height: 700px;
+    background-color: antiquewhite;
+}
+.div-profil h1{
+    margin-left: 10px;
+    display: flex;
+}
+
+.img-profil {
+    margin-left: 10px;
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    border-top: 1px solid blue;
+}
+
+
+.img-profil > img {
+    width: 20%;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.contact-h1 {
+    margin-top: 60px;
+    margin-left: 10px;
+
+}
+.div-contact {
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 90%;
+    height: 200px;
+    background-color: white;
+}
+
+
+.div-exp-form-comp {
+    margin-top: 13.5rem;
+    width: 60%;
+    height: 700px;
+    background-color: bisque;
+}
+
+
+
+.content-experience, 
+.content-formation, 
+.content-competences,
+.img-profil,
+.div-contact {
+    border-top: 1px solid blue;
+}
+
+.content-competences ul {
+    width: 100%;
+    height: 20px;
+}
+.content-competences > li {
+    width: 90%;
+    height: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 20px solid black;
+}
+
 
 
 footer {
