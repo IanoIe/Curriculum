@@ -20,13 +20,22 @@ header {
     color: white;
 }
 
+.pricnipale {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+
+}
+
 .menu {
     display: block;
     text-align: center;
     float: left;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: rgb(24, 20, 20);
     color: white;
     overflow: auto;
 }
@@ -44,6 +53,11 @@ header {
     font-size: 14px;
 }
 
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
 ul {
     display: flex;
     justify-content: space-between;
@@ -56,14 +70,13 @@ li {
 }
 
 .div-principal {
-    top: 2rem;
+    display: inline-flex;
     background-color: white;
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: auto;
     align-items: center;
-    display: flex;
-    justify-content: space-evenly;
+    border: 10px solid green;
 }
 
 .pricnipale h1 {
@@ -86,7 +99,7 @@ li {
     margin-left: 30px;
     width: 20%;
     height: 700px;
-    background-color: antiquewhite;
+    background-color: rgb(233, 224, 210);
 }
 .div-profil h1{
     margin-left: 10px;
@@ -141,10 +154,11 @@ li {
 
 
 .div-exp-form-comp {
-    margin-top: 15px;
-    margin-right: 50px;
-    width: 50%;
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
     background-color: white;
 }
 
@@ -169,12 +183,6 @@ li {
     margin-left: 10px;
 }
 
-.content-competences{
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-
 .content-experience, 
 .content-formation, 
 .content-competences,
@@ -183,22 +191,42 @@ li {
     border-top: 1px solid blue;
 }
 
-.competences-acquises {
-    display: flex;
-    margin-top: 15px;
+.content-competences {
+    display: table-row;
+    width: 80%;
+    padding-top: 10px;
+    justify-content: center;
 }
-.competences-acquises ul{
-    padding: 20px;
-    
-}
-.competences-acquises li {
-
+.content-competences .ul-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    border: 1px solid grey;
+    list-style-type: none;
+    height: 100px;
+    margin-top: 5px;
+    gap: 10px;
+    justify-content: center;
+}
+.content-competences .ul-content li{
+    background: linear-gradient(14deg, #d4d4d4, #ffffff);
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
 }
 
+.content-competences .ul-content li:nth-child(-n+4) {
+    flex: 0 0 calc(20% - 10px);
+}
+
+.content-competences .ul-content li:nth-child(n+5) {
+    flex: 0 0 calc(15% - 10px);
+}
 
 
 /* Pied de page */
@@ -211,3 +239,4 @@ footer {
   color: white;
   text-align: center;
 }
+
