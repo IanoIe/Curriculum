@@ -36,6 +36,8 @@ header {
     display: inline-block;
     margin-left: 10px;
     margin-top: 17px;
+    color: white;
+    text-decoration: none;
 }
 
 main {
@@ -202,13 +204,12 @@ footer {
 }
 
 /* Media Queries pour adapter la disposition sur mobiles (max-width: 768px) */
-@media (max-width: 376px){
+@media (min-width: 376px) and (max-width: 700px){
     body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
-        
+        width: 100%;   
     }
 
     .content-flex-2 {
@@ -245,9 +246,13 @@ footer {
         width: 100%;
         height: 80%;
     }
+
+    .competences {
+        border: 5px solid red;
+    }
     
     .competences-1 {
-        display: fle;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
@@ -257,6 +262,41 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-       
+        width: 80%;
     }
+}
+
+@media (min-width: 701px) and (max-width: 1000px){
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        height: 1000px;
+   }
+
+   .div-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 990px;
+   }
+}
+
+@media (min-width: 1000px) and (max-width: 1355px){
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+        height: 1000px;
+   }
+
+   .div-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 990px;
+   }
+
 }
